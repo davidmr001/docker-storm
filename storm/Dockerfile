@@ -20,7 +20,7 @@ RUN \
 && apt-get update -y \
 && apt-get install -y \
    python \
-&& wget -q -N http://mirrors.gigenet.com/apache/storm/${BIN_VERSION}/${BIN_VERSION}.tar.gz \
+&& wget -q -N http://www.apache.org/dyn/closer.lua/storm/${BIN_VERSION}/${BIN_VERSION}.tar.gz \
 && tar --strip-components=1 -C /usr/share/storm -xvf ${BIN_VERSION}.tar.gz \
 && rm ${BIN_VERSION}.tar.gz \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
